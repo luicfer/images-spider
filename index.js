@@ -5,9 +5,9 @@ program
     .version(config.version)
     .description(config.description)
     .usage('<url>')
-    .option('-o, --out <path>', 'image output path')
+    .option('-o, --out [path]', 'image output path default is ./ ','./')
     .option('-d, --debug', 'output debug message')
-    .option('-c, --maxConnections <number>', 'how many Connections you like default 10')
+    .option('-c, --maxConnections [number]', 'how many Connections you like use default is 10',10)
     .parse(process.argv);
 
 if(program.debug)
@@ -18,10 +18,8 @@ if(program.debug)
 var Crawler = require("crawler");
 var img = require('./lib/getImage')(program.out);
 var url = require('./lib/url')(program.args[0]);
-var mc = program.maxConnections;
-mc = !mc ? 10 : mc;
 var c = new Crawler({
-    maxConnections : mc,
+    maxConnections : program.maxConnections,
     callback : function (error, result, $) {
         if(error) {
             console.log(error);
