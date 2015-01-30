@@ -1,0 +1,30 @@
+{
+  "name": "images-spider",
+  "version": "0.0.1",
+  "description": "simple cli-tool to get images from the website",
+  "bin": {
+    "images-spider": "index.js"
+  },
+  "dependencies": {
+    "commander": "^2.6.0",
+    "crawler": "^0.4.1",
+    "debug": "^2.1.1",
+    "request": "^2.51.0"
+  },
+  "bugs": {
+    "url" : "http://github.com/luicfer/images-spider/issues",
+    "email" : "lucifer4he@gmail.com"
+  },
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/luicfer/images-spider.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": {
+    "name": "luicfer",
+    "email": "lucifer4he@gmail.com"
+  },
+    "license": "MIT"
+}
