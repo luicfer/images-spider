@@ -1,16 +1,17 @@
 {
   "name": "images-spider",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "simple cli-tool to get images from the website",
   "keywords":["crawler","spider","images-spider","images-crawler","images"],
   "bin": {
     "images-spider": "index.js"
   },
   "dependencies": {
-    "commander": "^2.6.0",
-    "crawler": "^0.4.1",
-    "debug": "^2.1.1",
-    "request": "^2.51.0"
+    "commander": "2.8.0",
+    "crawler": "0.4.3",
+    "debug": "2.1.3",
+    "lodash": "3.7.0",
+    "request": "2.55.0"
   },
   "bugs": {
     "url" : "http://github.com/luicfer/images-spider/issues",
@@ -27,5 +28,8 @@
     "name": "luicfer",
     "email": "lucifer4he@gmail.com"
   },
-    "license": "MIT"
+    "license": "MIT",
+  "devDependencies": {
+
+  }
 }
