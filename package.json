@@ -1,6 +1,6 @@
 {
   "name": "images-spider",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "simple cli-tool to get images from the website",
   "keywords":["crawler","spider","images-spider","images-crawler","images"],
   "bin": {
